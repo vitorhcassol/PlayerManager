@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bginv"
+    tools:context=".SecondFragment">
+
+    <Button
+        android:id="@+id/buttonJogado"
+        android:layout_width="103dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/buttonborder"
+        android:text="@string/adicionar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAlterar"
+        android:layout_width="103dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/buttonborder"
+        android:text="@string/alterar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonJogado" />
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="103dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/buttonborder"
+        android:contentDescription="@string/voltar"
+        android:text="@string/voltar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAlterar" />
+
+    <ListView
+        android:layout_width="409dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="292dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Nome"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonJogado"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="208dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="CPF"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonJogado"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:text="Data de Nascimento"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonJogado"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

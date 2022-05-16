@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1inv"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonJogado"
+        android:layout_width="103dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="252dp"
+        android:background="@drawable/buttonborder"
+        android:text="Jogador"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTime"
+        android:layout_width="103dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/buttonborder"
+        android:text="Time"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
